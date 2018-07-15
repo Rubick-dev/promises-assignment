@@ -1,0 +1,141 @@
+body {
+  font-family: 'Arimo', sans-serif;
+  background-color: slategray;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px; 
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p:first-of-type {
+  font-size: 2rem;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+p:nth-of-type(2) {
+  margin-top: 20px;
+  margin-bottom: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 1.5rem;
+  color: Purple;
+}
+
+
+#btn,
+#ran-fact-btn {
+  margin-left: 20px;
+  font-family: 'Bungee Inline', cursive;
+  width: 120px;
+  background: #011B41;  /* fallback for old browsers */
+  background: linear-gradient(to right, #1B3D70, #082C61, #011B41); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  box-shadow: 6px 5px 24px #0f0c29;
+  color: #A4A63C;
+  font-size: 1rem;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#btn:hover,
+#ran-fact-btn:hover {
+  background: #2079b0;
+  background-image: linear-gradient(to bottom, #142C73, #0A2574, #021F75);
+  text-decoration: none;
+}
+
+#btn:focus,
+#ran-fact-btn {
+  background: #142C73;
+  outline: 0;
+}
+
+
+#btn-clear {
+  margin-left: 20px;
+  font-family: 'Bungee Inline', cursive;
+  width: 120px;
+  background: #011B41;  /* fallback for old browsers */
+  background: linear-gradient(to right, #CA0018, #950011, #62000B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  box-shadow: 6px 5px 24px #0f0c29;
+  color: #A4A63C;
+  font-size: 1rem;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#btn-clear:hover {
+  background: #9B0712;
+  background: linear-gradient(to right, #AA1D2E, #890010, #73000D);
+  text-decoration: none;
+}
+
+#btn-clear:focus {
+  background: #AA1D2E;
+  outline: 0;
+}
+
+#ran-fact-btn {
+  margin-right: 20px;
+}
+
+/* Loader animation */
+.loader {
+  margin: auto;
+  margin-top: 20px;
+  border: 16px solid #bdc3c7;
+  width: 50px;
+  height: 50px;
+  border-top-color: #1abc9c;
+  border-bottom-color: #3498db;
+  border-radius: 50%;
+  animation: coloredspin 4s linear infinite;
+}
+
+@keyframes coloredspin {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top-color: #1abc9c;
+    border-bottom-color: #1abc9c;
+  }
+  25% {
+    border-top-color: #2ecc71;
+    border-bottom-color: #2ecc71;
+  }
+  50% {
+    transform: rotate(360deg) scale(1.1);
+    border-top-color: #3498db;
+    border-bottom-color: #3498db;
+  }
+  
+  75% {
+    border-top-color: #9b59b6;
+    border-bottom-color: #9b59b6;
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+    border-top-color: #1abc9c;
+    border-bottom-color: #1abc9c;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
